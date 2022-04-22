@@ -4,9 +4,9 @@
   "description": "a blog posting application",
   "main": "app.js",
   "scripts": {
-    "start":"node app",
+    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"nodemon app.js"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "express-handlebars": "^6.0.5",
     "mongoose": "^6.3.0",
     "morgan": "^1.10.0"
   }
