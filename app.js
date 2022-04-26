@@ -6,7 +6,7 @@ const exphbs = require('express-handlebars')
 const path = require('path')
 dotenv.config()
 const {connectDB} = require('./config/db.js');
-const {router}=require('./routes/index.js');
+const {router}=require('./routes/index.js'); 
 
 //initiationg the express
 const app = express();

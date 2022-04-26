@@ -1,28 +1,31 @@
 {
-  "name": "backend-project-nileshwar-paul-au26",
+  "name": "backend-project_team-project",
   "version": "1.0.0",
-  "description": "a blog posting application",
+  "description": "",
   "main": "app.js",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "express-handlebars": "^6.0.5",
+    "handlebars": "^4.7.7",
+    "mongoose": "^6.3.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/attainu/backend-project-Nileshwar-Paul-au26.git"
   },
-  "author": "nileshwar paul",
+  "keywords": [],
+  "author": "abhishek shinde",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/attainu/backend-project-Nileshwar-Paul-au26/issues"
   },
-  "homepage": "https://github.com/attainu/backend-project-Nileshwar-Paul-au26#readme",
-  "dependencies": {
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3",
-    "express-handlebars": "^6.0.5",
-    "mongoose": "^6.3.0",
-    "morgan": "^1.10.0"
-  }
+  "homepage": "https://github.com/attainu/backend-project-Nileshwar-Paul-au26#readme"
 }
