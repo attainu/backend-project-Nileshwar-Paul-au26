@@ -9,11 +9,11 @@ const path = require('path')
 dotenv.config()
 
 //Connection to database
-const {connectDB} = require('./config/db.js');
+const { connectDB } = require('./config/db.js');
 connectDB()
 
-const {router}=require('./routes/index.js');
-const {authrouter} = require('./routes/auth.js') 
+const { router } = require('./routes/index.js');
+const { authrouter } = require('./routes/auth.js')
 
 //initiationg the express
 const app = express();
@@ -25,14 +25,14 @@ require('./config/passport')(passport)
 //app.use(morgan('dev'))
 
 //seting the template engine * (Handlebars)
-app.engine('.hbs',exphbs.engine({defaultLayout:'main',extname:'.hbs'})); 
-app.set('view engine','.hbs');
+app.engine('.hbs', exphbs.engine({ defaultLayout: 'main', extname: '.hbs' }));
+app.set('view engine', '.hbs');
 
 // Express-Sessions middleware
 app.use(session({
-    secret:process.env.SESSION_SECRET,
-    resave:false,
-    saveUninitialized:false,
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
 }))
 
 // Passport Middleware
@@ -53,5 +53,5 @@ app.use('/', router)
 app.use('/auth', authrouter)
 
 //Starting the server
-app.listen(process.env.PORT,console.log(`Server Started at Port No ${process.env.PORT}`))
+app.listen(process.env.PORT, console.log(`Server Started at Port No ${process.env.PORT}`))
 
