@@ -1,0 +1,34 @@
+{
+  "name": "backend-project_team-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "express-handlebars": "^6.0.5",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "mongoose": "^6.3.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/attainu/backend-project-Nileshwar-Paul-au26.git"
+  },
+  "keywords": [],
+  "author": "abhishek shinde & Nileshwar Paul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/attainu/backend-project-Nileshwar-Paul-au26/issues"
+  },
+  "homepage": "https://github.com/attainu/backend-project-Nileshwar-Paul-au26#readme"
+}
