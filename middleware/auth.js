@@ -1,21 +1,21 @@
 const { redirect } = require("express/lib/response")
 
-module.exports  = {
-    ensureAuth: function (req,res,next) {
-        if(req.isAuthenticated()){
+module.exports = {
+    ensureAuth: function (req, res, next) {
+        if (req.isAuthenticated()) {
             return next()
         }
-        else{
+        else {
             res.redirect('/')
         }
     },
-    ensureGuest: function (req,res,next) {
-        if(req.isAuthenticated()){
+    ensureGuest: function (req, res, next) {
+        if (req.isAuthenticated()) {
             res.redirect('/dashboard')
         }
-        else{
+        else {
             return next()
         }
-        
+
     }
 }
