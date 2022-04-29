@@ -7,3 +7,8 @@ p {
     margin-top: 50px;
     text-align: center;
 }
+.main-container {
+    width: 90%;
+    margin-top: 50px;
+    text-align: left;
+}
