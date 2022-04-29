@@ -5,7 +5,8 @@ const morgan = require('morgan')
 const exphbs = require('express-handlebars')
 const passport = require('passport')
 const session = require('express-session');
-const path = require('path')
+const path = require('path');
+const MongoStore = require('connect-mongo');
 dotenv.config()
 
 //Connection to database
@@ -33,6 +34,7 @@ app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
+    store:MongoStore.create({mongoUrl:process.env.MONGO_URI})
 }))
 
 // Passport Middleware
@@ -54,4 +56,3 @@ app.use('/auth', authrouter)
 
 //Starting the server
 app.listen(process.env.PORT, console.log(`Server Started at Port No ${process.env.PORT}`))
-
