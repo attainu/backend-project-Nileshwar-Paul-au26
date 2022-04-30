@@ -26,7 +26,7 @@ require('./config/passport')(passport)
 //app.use(morgan('dev'))
 
 //seting the template engine * (Handlebars)
-app.engine('.hbs', exphbs.engine({ defaultLayout: 'main', extname: '.hbs' }));
+app.engine('.hbs', exphbs.engine({extname: '.hbs' }));
 app.set('view engine', '.hbs');
 
 // Express-Sessions middleware

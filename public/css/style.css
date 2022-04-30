@@ -3,7 +3,14 @@ p {
 }
 
 .login-container {
-    width: 400px;
+    width: max-content;
     margin-top: 50px;
+    margin-left:25%;
+    margin-right:25%;
     text-align: center;
+}
+.main-container {
+    width: 90%;
+    margin-top: 50px;
+    text-align: left;
 }
