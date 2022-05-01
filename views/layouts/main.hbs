@@ -15,10 +15,11 @@
 
 <body>
     {{> _header}}
+    {{> _add_btn}}
+
     <div class="container">
         <div class="card">
             <div class="card-content">
-                
                 {{{body}}}
             </div>
         </div>
@@ -27,9 +28,19 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    {{!-- CKEDITOR JS FILE --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.18.0/ckeditor.js" integrity="sha512-woYV6V3QV/oH8txWu19WqPPEtGu+dXM87N9YXP6ocsbCAH1Au9WDZ15cnk62n6/tVOmOo0rIYwx05raKdA4qyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     {{!--Setting up hamburger and initializing with our class --}}
     <script>
         M.Sidenav.init(document.querySelector('.sidenav'))
+        M.FormSelect.init(document.querySelector('#status'))
+
+        /* Adding Ckeditor ! */
+        CKEDITOR.replace('body',{
+            plugins:'wysiwygarea , toolbar, basicstyles,link'
+        })
+
     </script>
 </body>
 
