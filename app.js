@@ -30,14 +30,15 @@ require('./config/passport')(passport)
 
 
 // Handlebars Helpers
-const { formatDate, stripTags, truncate } = require('./helpers/hbs');
+const { formatDate, stripTags, truncate, editIcon } = require('./helpers/hbs');
 
 //Seting the template engine * (Handlebars)
 app.engine('.hbs', exphbs.engine({
     helpers: {
         formatDate,
         stripTags,
-        truncate
+        truncate,
+        editIcon
     },
     defaultLayout: 'main', extname: '.hbs'
 }));
@@ -57,7 +58,13 @@ app.use(session({
 // Passport Middleware
 app.use(passport.initialize());
 app.use(passport.session());
-
+ 
+// Set global var
+app.use(function (req, res, next) {
+    res.locals.user = req.user || null
+    next()
+  })
+  
 
 // Static middleware
 app.use(express.static('public'))
