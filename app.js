@@ -30,7 +30,7 @@ require('./config/passport')(passport)
 
 
 // Handlebars Helpers
-const { formatDate, stripTags, truncate, editIcon } = require('./helpers/hbs');
+const { formatDate, stripTags, truncate, editIcon, select } = require('./helpers/hbs');
 
 //Seting the template engine * (Handlebars)
 app.engine('.hbs', exphbs.engine({
@@ -38,7 +38,8 @@ app.engine('.hbs', exphbs.engine({
         formatDate,
         stripTags,
         truncate,
-        editIcon
+        editIcon,
+        select
     },
     defaultLayout: 'main', extname: '.hbs'
 }));
