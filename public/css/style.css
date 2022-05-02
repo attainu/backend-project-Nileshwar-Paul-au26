@@ -1,9 +1,9 @@
 body {
     background: #2c3e50;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);
+    background: -webkit-linear-gradient(to right, #f1f4f7, #cee4fa);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3498db, #2c3e50);
+    background: linear-gradient(to right, #eaeef1, #c6e2ff);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
