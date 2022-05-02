@@ -19,3 +19,6 @@ module.exports = {
 
     }
 }
+
+
+// MONGO_URI = mongodb+srv://paul:paul123@cluster0.gltre.mongodb.net/blogapp?retryWrites=true&w=majority
