@@ -47,6 +47,28 @@ blogrouter.get('/', ensureAuth, async (req, res) => {
         res.render('error/500')
     }
 })
+// @desc    Show single Blog
+// @route   GET /stories/:id
+blogrouter.get('/:id', ensureAuth, async (req, res) => {
+    try {
+      let story = await Story.findById(req.params.id).populate('user').lean()
+  
+      if (!story) {
+        return res.render('error/404')
+      }
+  
+      if (story.user._id != req.user.id && story.status == 'private') {
+        res.render('error/404')
+      } else {
+        res.render('stories/show', {
+          story,
+        })
+      }
+    } catch (err) {
+      console.error(err)
+      res.render('error/404')
+    }
+  })
 // @desc    Show edit page
 // @route   GET /stories/edit/:id
 blogrouter.get('/edit/:id', ensureAuth, async (req, res) => {
@@ -72,7 +94,7 @@ blogrouter.get('/edit/:id', ensureAuth, async (req, res) => {
     }
   })
 
-// @desc    Update story
+// @desc    Update Blog
 // @route   PUT /stories/:id
 blogrouter.put('/:id', ensureAuth, async (req, res) => {
     try {
@@ -98,7 +120,7 @@ blogrouter.put('/:id', ensureAuth, async (req, res) => {
     }
   })
   
-  // @desc    Delete story
+  // @desc    Delete Blog
 // @route   DELETE /stories/:id
 blogrouter.delete('/:id', ensureAuth, async (req, res) => {
     try {
