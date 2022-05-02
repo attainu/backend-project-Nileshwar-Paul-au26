@@ -30,3 +30,6 @@ body {
 .img-small {
     width: 180px;
 }
+.fa-small {
+    font-size: 16px !important;
+  }
