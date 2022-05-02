@@ -7,6 +7,7 @@ const passport = require('passport')
 const session = require('express-session');
 const path = require('path');
 const MongoStore = require('connect-mongo');
+const methodOverride = require('method-override');
 dotenv.config()
 
 //Connection to database
@@ -30,14 +31,16 @@ require('./config/passport')(passport)
 
 
 // Handlebars Helpers
-const { formatDate, stripTags, truncate } = require('./helpers/hbs');
+const { formatDate, stripTags, truncate, editIcon, select } = require('./helpers/hbs');
 
 //Seting the template engine * (Handlebars)
 app.engine('.hbs', exphbs.engine({
     helpers: {
         formatDate,
         stripTags,
-        truncate
+        truncate,
+        editIcon,
+        select
     },
     defaultLayout: 'main', extname: '.hbs'
 }));
@@ -57,7 +60,13 @@ app.use(session({
 // Passport Middleware
 app.use(passport.initialize());
 app.use(passport.session());
-
+ 
+// Set global var
+app.use(function (req, res, next) {
+    res.locals.user = req.user || null
+    next()
+  })
+  
 
 // Static middleware
 app.use(express.static('public'))
@@ -67,7 +76,18 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-
+// Method override
+app.use(
+    methodOverride(function (req, res) {
+      if (req.body && typeof req.body === 'object' && '_method' in req.body) {
+        // look in urlencoded POST bodies and delete it
+        let method = req.body._method
+        delete req.body._method
+        return method
+      }
+    })
+  )
+  
 //Routes
 app.use('/', router)
 app.use('/auth', authrouter)
@@ -81,5 +101,3 @@ app.listen(process.env.PORT, console.log(`Server Started at Port No ${process.en
 
 
 
-
-// MONGO_URI = mongodb+srv://paul:paul123@cluster0.gltre.mongodb.net/blogapp?retryWrites=true&w=majority
