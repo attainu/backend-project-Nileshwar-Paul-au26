@@ -47,6 +47,29 @@ blogrouter.get('/', ensureAuth, async (req, res) => {
         res.render('error/500')
     }
 })
-
+// @desc    Show edit page
+// @route   GET /stories/edit/:id
+blogrouter.get('/edit/:id', ensureAuth, async (req, res) => {
+    try {
+      const story = await Story.findOne({
+        _id: req.params.id,
+      }).lean()
+  
+      if (!story) {
+        return res.render('error/404')
+      }
+  
+      if (story.user != req.user.id) {
+        res.redirect('/stories')
+      } else {
+        res.render('stories/edit', {
+          story,
+        })
+      }
+    } catch (err) {
+      console.error(err)
+      return res.render('error/500')
+    }
+  })
 
 module.exports = { blogrouter }
