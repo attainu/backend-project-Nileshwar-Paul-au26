@@ -98,5 +98,27 @@ blogrouter.put('/:id', ensureAuth, async (req, res) => {
     }
   })
   
+  // @desc    Delete story
+// @route   DELETE /stories/:id
+blogrouter.delete('/:id', ensureAuth, async (req, res) => {
+    try {
+      let story = await Story.findById(req.params.id).lean()
+  
+      if (!story) {
+        return res.render('error/404')
+      }
+  
+      if (story.user != req.user.id) {
+        res.redirect('/stories')
+      } else {
+        await Story.remove({ _id: req.params.id })
+        res.redirect('/dashboard')
+      }
+    } catch (err) {
+      console.error(err)
+      return res.render('error/500')
+    }
+  })
+  
 
 module.exports = { blogrouter }
