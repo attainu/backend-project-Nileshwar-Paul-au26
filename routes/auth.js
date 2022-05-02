@@ -1,6 +1,9 @@
 const express = require('express');
 const passport = require('passport');
 const authrouter = express.Router();
+var session = require('express-session');
+const { Store } = require('express-session');
+
 
 // @description:-   Auth with Google 
 // @route:-         GET/auth/google
@@ -18,9 +21,14 @@ authrouter.get(
 
 // @description:- Logout User
 // route:-        /auth/logout
-authrouter.get('/logout', (req, res) => {
+authrouter.post('/logout', (req, res) => {
     req.logout()
-    res.redirect('/')
+    req.session.destroy((err) => {
+        res.clearCookie('connect.sid');
+        // Don't redirect, just print text
+        res.redirect('/')
+    });
+
 })
 
 
