@@ -8,6 +8,7 @@ const session = require('express-session');
 const path = require('path');
 const MongoStore = require('connect-mongo');
 const methodOverride = require('method-override');
+
 dotenv.config()
 
 //Connection to database
@@ -27,12 +28,13 @@ const app = express();
 require('./config/passport')(passport)
 
 
-//loging*
-//app.use(morgan('dev'))
+// loging*
+app.use(morgan('dev'))
 
 
 // Handlebars Helpers
 const { formatDate, stripTags, truncate, editIcon, select } = require('./helpers/hbs');
+
 
 //Seting the template engine * (Handlebars)
 app.engine('.hbs', exphbs.engine({
