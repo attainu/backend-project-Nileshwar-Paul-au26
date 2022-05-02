@@ -12,7 +12,6 @@ blogrouter.get('/add', ensureAuth, (req, res) => {
     res.render('stories/add')
 })
 
-
 // @desc      Process add form
 // @route     POST /stories
 blogrouter.post('/', ensureAuth, async (req, res) => {
@@ -28,7 +27,6 @@ blogrouter.post('/', ensureAuth, async (req, res) => {
 
     }
 })
-
 
 // @desc      Show all blogs
 // @route     GET /stories
@@ -142,5 +140,24 @@ blogrouter.delete('/:id', ensureAuth, async (req, res) => {
     }
   })
   
+// @desc    User Blogs
+// @route   GET /stories/user/:userId
+blogrouter.get('/user/:userId', ensureAuth, async (req, res) => {
+  try {
+    const stories = await Story.find({
+      user: req.params.userId,
+      status: 'public',
+    })
+      .populate('user')
+      .lean()
+
+    res.render('stories/index', {
+      stories,
+    })
+  } catch (err) {
+    console.error(err)
+    res.render('error/500')
+  }
+})
 
 module.exports = { blogrouter }
