@@ -25,16 +25,17 @@ Go to your browser  localhost:3001 <br>
 
 Different Routes Used in Our Application:- <br>
 Route&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description
+<br>
 /&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;LoginPage
 <br>
 /logout&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Logout <br>
 /dashboard&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Users Dashboard <br>
 /&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;POST&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Add Blog <br>
-/add	                GET	    Add Blog Page
-/stories	            GET	    Show the Public Blogs Page
-/stories/:id	        GET	    Get A specific Blog
-/stories/edit/:id	    GET	    Show Edit Page of that Blog
-/stories/edit/:id	    PUT	    Update the Blog
-/stories/:id	        DELETE	Delete a Blog
-/stories/user/:userId	GET     Get All blog of that User
+/add&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Add Blog Page<br>
+/stories&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Show the Public Blogs Page <br>
+/stories/:id&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Get A specific Blog <br>
+/stories/edit/:id&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Show Edit Page of that Blog <br>
+/stories/edit/:id&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;PUT&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Update the Blog <br>
+/stories/:id&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;DELETE&emsp;&emsp;&emsp;&emsp;&emsp;Delete a Blog <br>
+/stories/user/:userId&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Get All blog of that User
 
