@@ -23,7 +23,7 @@ type “$ npm i” to install all the dependencies. <br>
 To start the application type “$ npm run start” <br>
 Go to your browser  localhost:3001 <br>
 
-Different Routes Used in Our Application:-
+Different Routes Used in Our Application:- <br>
 Route &nbsp;&nbsp;&nbsp;Method	Description
 /	                    GET	    Login Page
 /logout	                GET	    Logout 
