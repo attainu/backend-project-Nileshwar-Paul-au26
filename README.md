@@ -24,11 +24,12 @@ To start the application type “$ npm run start” <br>
 Go to your browser  localhost:3001 <br>
 
 Different Routes Used in Our Application:- <br>
-Route&emsp;&emsp;&emsp;Method&emsp;&emsp;&emsp;Description
-/	                    GET	    Login Page
-/logout	                GET	    Logout 
-/dashboard	            GET	    Users Dashboard
-/	                    POST	Add Blog
+Route&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description
+/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;LoginPage
+<br>
+/logout&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Logout <br>
+/dashboard&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Users Dashboard <br>
+/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;POST&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Add Blog <br>
 /add	                GET	    Add Blog Page
 /stories	            GET	    Show the Public Blogs Page
 /stories/:id	        GET	    Get A specific Blog
