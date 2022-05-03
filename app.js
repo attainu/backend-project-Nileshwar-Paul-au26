@@ -10,7 +10,7 @@ const MongoStore = require('connect-mongo');
 const methodOverride = require('method-override');
 
 dotenv.config()
-
+const PORT=process.env.PORT || 3001
 //Connection to database
 const { connectDB } = require('./config/db.js');
 connectDB()
@@ -99,7 +99,7 @@ app.use('/stories', blogrouter)
 
 
 //Starting the server
-app.listen(process.env.PORT, console.log(`Server Started at Port No ${process.env.PORT}`))
+app.listen(PORT, console.log(`Server Started at Port No ${process.env.PORT}`))
 
 
 
