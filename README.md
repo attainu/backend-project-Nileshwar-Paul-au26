@@ -1,5 +1,8 @@
                                     Blog App
-We created a Blog Posting web application using MERN Stack. In Which any user can login and write blogs and can read other user’s blogs. User can also edit their blogs. User can add images, code snippets and link in blog. we are using Google Oauth 2.0 API & Passport to login & authenticate the user. & Using a NoSQL Database MongoDB to store the data. Using Git for the version control and using GitHub to store the code. In this project we applied REST API and following MVC Architecture. We Used Heroku to Host our application. 
+We created a Blog Posting web application using MERN Stack. <br>
+In Which any user can login and write blogs and can read other user’s blogs.<br>
+ User can also edit their blogs.<br>
+User can add images, code snippets and link in blog. we are using Google Oauth 2.0 API & Passport to login & authenticate the user. & Using a NoSQL Database MongoDB to store the data. Using Git for the version control and using GitHub to store the code. In this project we applied REST API and following MVC Architecture. We Used Heroku to Host our application. 
 
 [GitHub Repository](https://github.com/attainu/backend-project-Nileshwar-Paul-au26.git)
 
