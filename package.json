@@ -13,11 +13,11 @@
     "method-override": "^3.0.0",
     "moment": "^2.29.3",
     "mongoose": "^6.3.1",
+    "morgan": "^1.10.0",
     "passport": "^0.5.2",
     "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {
-    "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
   },
   "scripts": {
