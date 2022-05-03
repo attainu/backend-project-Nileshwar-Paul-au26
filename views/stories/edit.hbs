@@ -1,4 +1,4 @@
-<h3>Edit Blog</h3>
+<h3 style="text-align: center;">Edit Blog</h3>
 <div class="row">
     <form action="/stories/{{story._id}}" method="POST" class="col s12">
         <input type="hidden" value="PUT" name="_method">
@@ -23,7 +23,6 @@
 
         <div class="row">
             <div class="input-field">
-                <h5>Add Your Blog Here:</h5>
                 <textarea id="body" name="body">{{story.body}}</textarea>
             </div>
         </div>
