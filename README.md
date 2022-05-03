@@ -26,10 +26,10 @@ Go to your browser  localhost:3001 <br>
 Different Routes Used in Our Application:- <br>
 Route&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description
 <br>
-/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;LoginPage
+/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;LoginPage
 <br>
 /logout&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Logout <br>
-/dashboard&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Users Dashboard <br>
+/dashboard&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;Users Dashboard <br>
 /&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;POST&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Add Blog <br>
 /add&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Add Blog Page<br>
 /stories&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Show the Public Blogs Page <br>
