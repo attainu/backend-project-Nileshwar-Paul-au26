@@ -24,7 +24,7 @@ To start the application type “$ npm run start” <br>
 Go to your browser  localhost:3001 <br>
 
 Different Routes Used in Our Application:- <br>
-Route &nbsp;&nbsp;&nbsp;Method	Description
+Route&emsp;&emsp;&emsp;Method&emsp;&emsp;&emsp;Description
 /	                    GET	    Login Page
 /logout	                GET	    Logout 
 /dashboard	            GET	    Users Dashboard
