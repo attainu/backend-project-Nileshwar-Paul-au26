@@ -1,10 +1,11 @@
 body {
-    background: #2c3e50;
+    background: #BBD2C5;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);
+    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3498db, #2c3e50);
+    background: linear-gradient(to right, #292E49, #536976, #BBD2C5);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 p {
@@ -23,6 +24,7 @@ h5 {
     font-size: 30px;
     margin: 20px;
     font-weight: bold;
+    word-wrap: break-word;
 }
 
 h6 {
@@ -34,10 +36,9 @@ h6 {
 }
 
 .card {
-    background-color: rgb(215, 216, 216);
     margin-top: 30px;
-    border: 1px solid rgb(5, 125, 139);
-    box-shadow: 6px 6px 15px rgb(6, 85, 93);
+    border: 1px solid rgb(175, 173, 173);
+    box-shadow: 7px 7px 10px rgb(8, 62, 87);
 }
 
 .login-container {
@@ -65,4 +66,86 @@ h6 {
 
 .fa-small {
     font-size: 16px !important;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+.sidenav {
+    background: #E0EAFC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.navbar {
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media only screen and (max-width: 663px) {
+    .card {
+        width: 300px !important;
+        height: auto;
+        margin-left: 40px;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .login-container {
+        width: 150px;
+        margin-right: 50px;
+        text-align: center;
+    }
+
+    .login-container h3 {
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    .login-container section {
+        margin-right: 30px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .card {
+        width: 200px !important;
+        height: auto;
+        margin-left: 40px;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .login-container {
+        width: 100px;
+        margin-right: 50px;
+        text-align: center;
+    }
+
+    .login-container h3 {
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    .login-container section {
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    .login-container a {
+        width: 100px;
+        height: 100px;
+        padding: 0 0;
+        text-align: center;
+    }
 }
