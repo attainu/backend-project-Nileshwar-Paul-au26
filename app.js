@@ -96,11 +96,7 @@ app.use('/', router)
 app.use('/auth', authrouter)
 app.use('/stories', blogrouter)
 
-
-
-//Starting the server
 app.listen(PORT, console.log(`Server Started at Port No ${process.env.PORT}`))
-
 
 
 
