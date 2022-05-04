@@ -24,20 +24,6 @@ To start the application type “$ npm run start” <br>
 Go to your browser  localhost:3001 <br>
 
 Different Routes Used in Our Application:- <br>
-Route&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Method&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Description
-<br>
-/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;LoginPage
-<br>
-/logout&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Logout <br>
-/dashboard&emsp;&emsp;&emsp;&emsp; GET &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;Users Dashboard <br>
-/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;POST&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Add Blog <br>
-/add&emsp;&emsp;&emsp;&emsp; GET &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Add Blog Page<br>
-/stories&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Show the Public Blogs Page <br>
-/stories/:id&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Get A specific Blog <br>
-/stories/edit/:id&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Show Edit Page of that Blog <br>
-/stories/edit/:id&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;PUT&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Update the Blog <br>
-/stories/:id&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;DELETE&emsp;&emsp;&emsp;&emsp;&emsp;Delete a Blog <br>
-/stories/user/:userId&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Get All blog of that User
 
 <br>
 <table>
@@ -55,49 +41,54 @@ Route&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Method&emsp;&emsp;&emsp;&emsp;&emsp;&em
     <td>LoginPage</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>/logout</td>
+    <td>GET</td>
+    <td>Logout</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>/dashboard</td>
+    <td>GET</td>
+    <td>Users Dashboard</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>/</td>
+    <td>POST</td>
+    <td>Add Blog</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>/add</td>
+    <td>GET</td>
+    <td>Blog Page</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>/stories</td>
+    <td>GET</td>
+    <td>Show Public Blogs</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>/stories/:id</td>
+    <td> GET </td>
+    <td>Get A specific Blog</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>/stories/edit/:id</td>
+    <td> GET </td>
+    <td>Show Edit Page of that Blog</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>/stories/edit/:id</td>
+    <td>PUT</td>
+    <td>Update the Blog</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>/stories/:id</td>
+    <td>DELETE</td>
+    <td>Delete a Blog</td>
+  </tr>
+  <tr>
+    <td>/stories/user/:userId </td>
+    <td> GET </td>
+    <td>Get All blog of that User</td>
   </tr>
 </tbody>
 </table>
