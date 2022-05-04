@@ -6,7 +6,6 @@ const exphbs = require('express-handlebars')
 const passport = require('passport')
 const session = require('express-session');
 const path = require('path');
-const MongoStore = require('connect-mongo');
 const methodOverride = require('method-override');
 
 dotenv.config()
@@ -55,8 +54,6 @@ app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
-    // store: MongoStore({mongooseConnection:mongoose.connection})
-    store: MongoStore.create({ mongoUrl: process.env.MONGO_URI })
 }))
 
 
@@ -96,11 +93,7 @@ app.use('/', router)
 app.use('/auth', authrouter)
 app.use('/stories', blogrouter)
 
-
-
-//Starting the server
 app.listen(PORT, console.log(`Server Started at Port No ${process.env.PORT}`))
-
 
 
 
