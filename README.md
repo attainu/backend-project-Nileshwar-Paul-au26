@@ -39,3 +39,65 @@ Route&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Method&emsp;&emsp;&emsp;&emsp;&emsp;&em
 /stories/:id&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;DELETE&emsp;&emsp;&emsp;&emsp;&emsp;Delete a Blog <br>
 /stories/user/:userId&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GET&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Get All blog of that User
 
+<br>
+<table>
+<thead>
+  <tr>
+    <th>**********Route*********</th>
+    <th>**********Method********</th>
+    <th>**********Description*****</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>/</td>
+    <td>GET</td>
+    <td>LoginPage</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
